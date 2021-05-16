@@ -27,5 +27,37 @@ if(playerInput == '1'){
 }else if (playerInput == '3'){
   playerMove = 'nozyce';
 }
+//    C    Y
+// kamien papier Y -
+// papier papier D -
+// nozyce papier C
 
+// kamien nozyce C -
+// papier nozyce Y -
+// nozyce nozyce D -
+
+// kamien kamien D -
+// papier kamien C -
+// nozyce kamien Y
+
+//kamien nozyce
 printMessage('Twój ruch to: ' + playerMove);
+if( computerMove == 'kamień' && playerMove == 'papier'){
+  printMessage('Ty wygrywasz!');
+}else if ( computerMove == 'papier' && playerMove == 'papier'){
+  printMessage('remis');
+}else if ( computerMove == 'nozyce' && playerMove == 'papier'){
+  printMessage('Komputer wygrywa!');
+}else if ( computerMove == 'kamień' && playerMove == 'nozyce'){
+  printMessage('komputer wygrywa');
+}else if ( computerMove == 'papier' && playerMove == 'nozyce'){
+  printMessage('Ty wygrywasz!');
+}else if ( computerMove == 'nozyce' && playerMove == 'nozyce'){
+  printMessage('remis');
+}else if ( computerMove == 'kamień' && playerMove == 'kamień'){
+  printMessage('remis');
+}else if ( computerMove == 'papier' && playerMove == 'kamień'){
+  printMessage('komputer wygrywa');
+}else if ( computerMove == 'nozyce' && playerMove == 'kamień'){
+  printMessage('Ty wygrywasz!');
+}
